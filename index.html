@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Личный финансовый учет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Личный финансовый учет</h1>
+
+    <form id="transaction-form">
+      <input type="number" id="amount" placeholder="Сумма" step="0.01">
+
+      <select id="category">
+        <option value="">Выберите категорию</option>
+        <option value="Зарплата">Зарплата</option>
+        <option value="Еда">Еда</option>
+        <option value="Транспорт">Транспорт</option>
+        <option value="Развлечения">Развлечения</option>
+        <option value="Другое">Другое</option>
+      </select>
+
+      <input type="text" id="description" placeholder="Описание">
+
+      <button type="submit">Добавить</button>
+    </form>
+
+    <table id="transactions-table">
+      <thead>
+        <tr>
+          <th>Дата и время</th>
+          <th>Категория</th>
+          <th>Сумма</th>
+          <th>Краткое описание</th>
+          <th>Действие</th>
+        </tr>
+      </thead>
+      <tbody id="transactions-body"></tbody>
+    </table>
+
+    <div class="total-block">
+      Общая сумма: <span id="total-amount">0</span>
+    </div>
+
+    <div class="details-block">
+      <h3>Полное описание транзакции</h3>
+      <p id="full-description">Нажмите на строку таблицы.</p>
+    </div>
+  </div>
+
+  <script src="./src/utils.js"></script>
+  <script src="./src/transactions.js"></script>
+  <script src="./src/ui.js"></script>
+  <script src="./src/index.js"></script>
+
+</body>
+</html>

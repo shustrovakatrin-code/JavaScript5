@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.income {
+  background-color: #d4edda;
+}
+
+.expense {
+  background-color: #f8d7da;
+}
+
+.delete-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.total-block,
+.details-block {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eeeeee;
+}
